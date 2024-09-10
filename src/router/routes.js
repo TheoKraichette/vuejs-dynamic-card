@@ -1,27 +1,17 @@
 const routes = [
   {
-    path: '/',
+    path: '',
     component: () => import('layouts/MainLayout.vue'),
     children: [
       {
         name: 'home',
-        path: 'home',
-        component: () => import('pages/PricingPage.vue')
-      },
-      {
-        name: 'dashboard',
-        path: 'dashboard',
+        path: '/',
         component: () => import('pages/PricingPage.vue')
       },
       {
         name: 'pricing',
         path: 'pricing',
         component: () => import('pages/PricingPage.vue')
-      },
-      {
-        name: 'pricingCard',
-        path: 'pricing',
-        component: () => import('src/components/PricingCard.vue')
       }
     ]
   },
